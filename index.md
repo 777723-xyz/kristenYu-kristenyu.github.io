@@ -1,6 +1,6 @@
 ## TEST GAME
 
-[gold release](/www/index.html) 
+[gold release web](/www/index.html) 
 
 ## Welcome to GitHub Pages
 
