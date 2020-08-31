@@ -1,5 +1,7 @@
 ## TEST GAME
 
+[gold release](https://github.com/kristenYu/kristenyu.github.io/blob/master/soup-game-win/Game.exe) 
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/kristenYu/kristenyu.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
