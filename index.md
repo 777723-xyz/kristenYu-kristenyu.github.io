@@ -1,6 +1,6 @@
 ## TEST GAME
 
-[gold release](https://github.com/kristenYu/kristenyu.github.io/blob/master/soup-game-win/Game.exe) 
+[gold release](/www/index.html) 
 
 ## Welcome to GitHub Pages
 
