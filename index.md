@@ -1,6 +1,7 @@
 ## TEST GAME
 
 [gold release web](/www/index.html) 
+[gold release download](www.7z)
 
 ## Welcome to GitHub Pages
 
