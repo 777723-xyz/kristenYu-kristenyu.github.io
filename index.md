@@ -1,5 +1,6 @@
-## TEST GAME
+## Pages
 
+[Comput 250 example](http://example.com/cmput250.html)
 [gold release web](/www/index.html) 
 [gold release download](www.7z)
 
