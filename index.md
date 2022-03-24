@@ -1,6 +1,6 @@
 ## Pages
 
-[Comput 250 example](http://example.com/cmput250.html)
+[Comput 250 example](http://kristenyu.github.io/cmput250.html)
 
 ## Welcome to GitHub Pages
 
