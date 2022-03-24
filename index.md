@@ -1,6 +1,7 @@
 ## Pages
 
 [Comput 250 example](http://kristenyu.github.io/cmput250.html)
+[Test Research Game (Name TBD)](/pwr_web_build/index.html)
 
 ## Welcome to GitHub Pages
 
