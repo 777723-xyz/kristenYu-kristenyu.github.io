@@ -4,4 +4,4 @@
 
 1. [Test Research Game (Name TBD)](/pwr_web_build/index.html)
 
-1. [PWR Demo Video] (/pwr_demo/index.html)
+1. [PWR Demo Video](/pwr_demo/index.html)
