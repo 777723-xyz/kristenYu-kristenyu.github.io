@@ -1,3 +1,10 @@
+---
+layout: page
+title: CMPUT 250 Example
+permalink: 
+---
+
+
 ## TEST GAME
 
 Hi welcome to my game. 
