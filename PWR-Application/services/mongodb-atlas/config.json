@@ -1,0 +1,11 @@
+{
+    "id": "63e6bbc8418a1a2e2195a32f",
+    "name": "mongodb-atlas",
+    "type": "mongodb-atlas",
+    "config": {
+        "clusterName": "PWR-Research",
+        "readPreference": "primary",
+        "wireProtocolEnabled": false
+    },
+    "version": 1
+}
