@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <script>
-    
-    let jsonData;
-    
-    document.addEventListener('DOMContentLoaded', (event) => {
-        console.log('DOM fully loaded and parsed');
-        loadJsonData();
-    });
-
-    async function loadJsonData() {
-    try {
-        // Fetch the JSON file from the server
-        const response = await fetch('data.json'); // Replace with your file path
-        
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+    let audioData = [
+        {
+            "name": "audio/audio2.mp3",
+            "keywords": ["happy", "sad", "test"]
+        },
+        {
+            "name": "audio/audio1.mp3",
+            "keywords": ["love", "heartbreak"]
         }
+    ]
 
-        // Parse the response body as JSON
-        jsonData = await response.json();
-        console.log(jsonData);
+    // Function to perform the search
+    function performSearch(query) {
+        const listContainer = document.getElementById("audio-list");
+        listContainer.innerHTML = '';
+        let matchedResults = [];
+        matchedResults.length = 0;
+        audioData.forEach((story, index) => {
+            story["keywords"].forEach((keyword, index)=>{
+                console.log(keyword)
+                if(query.toLowerCase().trim() === keyword.toLowerCase().trim())
+                {
+                    matchedResults.push(index);
+                }
+            })
         
-    } catch (error) {
-        console.error('Could not load JSON data:', error);
+        });
+    const ul = document.createElement('ul');
+    matchedResults.forEach(index => {
+        const li = document.createElement('li');
+        const audio = document.createElement('audio');
+        audio.controls = true;
+        audio.src = audioData[index]["name"];
+        li.appendChild(audio);
+        listContainer.appendChild(li);
+    })
     }
-}
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const searchInput = document.getElementById('search-input');
+        // Event listener for search input
+        searchInput.addEventListener('input', function() {
+            performSearch(this.value);
+        });
+    })
+
 
 </script>
 
@@ -91,9 +112,11 @@ https://templatemo.com/tm-612-parallax-starter
             <div class="content-block">
                 <p>search for a story by keword! Try "love"</p>
                 <form id="search-form" role="search">
-                    <label for="search-input" class="visually-hidden">Search items</label>
+                    <label for="search-input" class="visually-hidden">Search stories</label>
                     <input type="search" id="search-input" placeholder="Search for items..." name="q" aria-label="Search through site content">
-                    <button type="submit">Search</button>
+                    <ul id="audio-list">
+                        <!-- List items will be added here dynamically -->
+                    </ul>
                 </form>
             </div>
         </div>
