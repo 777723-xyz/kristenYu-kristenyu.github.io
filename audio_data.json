@@ -1,0 +1,10 @@
+[
+    {
+        "name": "audio1.mp3",
+        "keywords": ["happy", "sad", "test"]
+    },
+    {
+        "name": "audio2.mp3",
+        "keywords": ["love", "heartbreak"]
+    }
+]
